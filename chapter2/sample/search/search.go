@@ -26,6 +26,7 @@ func Run(searchTrem string) {
 		}
 
 		go func(matcher Matcher, feed *Feed) {
+			// 面向接口编程
 			Match(matcher, feed, searchTrem, results)
 			wg.Done()
 		}(matcher, feed)

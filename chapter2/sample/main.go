@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"os"
+	_ "sample/matchers"
 	"sample/search"
 )
 
@@ -11,5 +12,5 @@ func init() {
 }
 
 func main() {
-	search.Run("npr")
+	search.Run("president")
 }

@@ -24,7 +24,7 @@ func RetrieveFeeds() ([]*Feed, error) {
 
 	var feeds []*Feed
 
-	err = json.NewDecoder(file).Decode(feeds)
+	err = json.NewDecoder(file).Decode(&feeds)
 	return feeds, err
 
 }
